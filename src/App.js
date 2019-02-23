@@ -85,7 +85,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Here Are You!</h1>
+          <h1>Here You Are!</h1>
           {description ? <p>{description}</p> : null}
           <div className="choose-test__wrapper">{this.renderList()}</div>
         </header>
