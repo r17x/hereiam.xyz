@@ -1,0 +1,66 @@
+$ut-green: #24c96c;
+$ut-blue: #336dd8;
+
+// @credits : https://codepen.io/xirclebox/pen/xMJNGy
+.choose-test__wrapper {
+	display: flex;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.card {
+	background: transparent;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 5px 22px -3px rgba(0, 0, 0, 0.10);
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 24px;
+	width: 100%;
+	
+	&:hover {
+		box-shadow: 0px 5px 22px -3px rgba(0, 0, 0, 0.21);
+    transform: translateY(-2px);
+	}
+}
+
+.card--cap {
+	height: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	&.green {
+		background: $ut-green;
+	}
+
+	&.blue {
+		background: $ut-blue;
+	}
+}
+
+.card--body {
+	min-height: 50px;
+	padding: 16px;
+}
+
+.card--header {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	
+	&.green {
+		color: $ut-green;
+	}
+
+	&.blue {
+		color: $ut-blue;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+.choose-test__wrapper {
+    flex-wrap: wrap;
+}
+}
